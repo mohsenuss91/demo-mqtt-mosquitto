@@ -26,6 +26,6 @@ if __name__ == '__main__':
 
     i = 0
     while 1:
-        client.publish("test/iOS", "Hello world %d" % i, qos=2)
+        client.publish("test/mychannel", "Hello world %d" % i, qos=2)
         time.sleep(3)
         i += 1

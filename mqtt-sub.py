@@ -8,7 +8,7 @@ from datetime import datetime
 
 def on_connect(client, userdata, flags, rc):
     print "Connected with result code", str(rc)
-    client.subscribe("test/iOS", qos=2)
+    client.subscribe("test/mychannel", qos=2)
 
 
 def on_message(client, userdata, msg):
