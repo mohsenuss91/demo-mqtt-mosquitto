@@ -68,5 +68,6 @@ Vagrant.configure(2) do |config|
     sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
     sudo apt-get update
     sudo apt-get install -y mosquitto
+    sudo apt-get autoremove -y
   SHELL
 end

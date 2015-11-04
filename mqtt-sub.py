@@ -26,7 +26,8 @@ def on_publish(client, userdata, mid):
     print userdata, mid
 
 if __name__ == '__main__':
-    client = mqtt.Client()
+    client_id = "abcdef"
+    client = mqtt.Client(client_id=client_id, clean_session=False)
     client.on_connect = on_connect
     client.on_message = on_message
 
